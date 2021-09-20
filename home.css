@@ -1,0 +1,127 @@
+/* reset CSS */
+* {
+  margin: 0;
+  padding: 0;
+}
+html {
+  scroll-behavior: smooth;
+}
+/* CSS Variable */
+:root {
+  --navbar-height: 59px;
+}
+body {
+  font-family: "Acme", sans-serif;
+  overflow-x: hidden;
+}
+
+/* Navigation Bar */
+#navbar {
+  display: flex;
+  align-items: center;
+  position: sticky;
+  top: 0px;
+  height: 107px;
+}
+
+/* Navigation Bar: Logo & text */
+#logo {
+  margin: 10px 22px;
+}
+#logo img {
+  padding: 2px;
+  height: 60px;
+  margin-top: -12px;
+}
+
+/* Navigation Bar list Styling */
+#navbar ul {
+  display: flex;
+  justify-content: space-around;
+}
+#navbar::before {
+  content: "";
+  background-color: rgb(13, 13, 14);
+  position: absolute;
+  top: 0px;
+  height: 91%;
+  width: 100%;
+  z-index: -1;
+  opacity: 0.5;
+}
+
+#navbar ul li {
+  list-style: none;
+  font-size: 1.3rem;
+}
+#navbar ul li a {
+  color: white;
+  display: block;
+  text-decoration: none;
+  padding: 18px 20px;
+  letter-spacing: 0.5px;
+  font-size: 25px;
+}
+
+#navbar ul li a:hover {
+  color:crimson;
+}
+
+/* Home Section */
+#home {
+  display: flex;
+  flex-direction: column;
+  height: 425px;
+  padding: 3px 200px;
+  justify-content: center;
+  align-items: center;
+}
+#home::before {
+  content: "";
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  background: url("homebg1.jpg") no-repeat center center/cover;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+  opacity: 0.65;
+}
+
+#home h1 {
+  color: rgb(14, 13, 13);
+  text-align: center;
+  font-size: 55px;
+}
+#home h2 {
+  font-size: 3.2rem;
+  color: black;
+  text-align: center;
+}
+
+/* Home Section: Button Styling */
+#home-btn button{
+  margin-top: 35px;
+  justify-content: center;
+  align-items: center;
+  border-radius:15px ;
+  background-color:transparent;
+  color: rgb(10, 12, 12);
+  height:100px;
+  width: 280px;
+}
+#home-btn a{
+    font-size: 40px;
+    font-weight:bolder ;
+}
+button :hover{
+    border: 4px solid rgb(65, 62, 62);
+    cursor: pointer;
+}
+
+/* Contact Us Section Styling */
+
+
+
+
+
